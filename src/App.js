@@ -2,11 +2,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Loja } from './screens/Loja';
 import { Forum } from './screens/Forum';
 import { NotFound } from './screens/NotFound';
+import { NormalizeStyles } from './shared/NormalizeStyles';
 
 
 export function App() {
   return (
     <div>
+      <NormalizeStyles />
       <BrowserRouter>
         <Routes>
           <Route path="/forum" element={<Forum />} />
