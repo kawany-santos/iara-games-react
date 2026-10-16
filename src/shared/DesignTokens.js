@@ -67,3 +67,27 @@ export const Shadows = {
 	ONE: '0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24)',
 	TWO: '0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14)',
 };
+
+export const Display = { 
+	FLEX: 'flex',
+	BLOCK: 'block',
+	GRID: 'grid',
+}
+
+export const Padding = {
+	ONE: '8px',
+	ONE_HALF: '12px',
+	TWO: '16px',
+}
+
+export const Align = {
+	CENTER: 'center',
+	RIGHT: 'right',
+	LEFT: 'left',
+}
+
+export const Justify = {
+	CENTER: 'center',
+	RIGHT: 'right',
+	LEFT: 'left',
+}

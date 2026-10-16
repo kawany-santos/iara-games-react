@@ -1,8 +1,14 @@
-import { Button } from "../common-components/Button/Button";
+import { Header } from "../common-components/Header/Header";
 export function Loja() {
 	return (
 		<div>
-			<Button>Buscar</Button>
+			<Header>
+				LOJA
+				BIBLIOTECA
+				FORUM	
+				SUPORTE			
+			</Header>
+
 		</div>
 	);
 }
