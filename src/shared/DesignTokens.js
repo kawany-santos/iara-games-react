@@ -1,10 +1,13 @@
 export const Colors = {
     NEUTRAL_WHITE :'#FFFFFF',
+	NEUTRAL_BEGE: '#F2F1EA',
     NEUTRAL_BLACK: '#000000',
     BACKGROUND_COLOR: '#08070D',
     NEUTRAL_GREY: '#3E424D',
     LIGHT_GREEN: '#A9E190',
     REBECCA_PURPLE: '#593C8F',
+	DARK_AMETHYST: '#3F2566',
+	PURPLE_AMETHYST: '#9684B3',
     LIGHT_PURPLE: '#B8B8FF',
     SEA_GREEN: '#2A8F55',
     MIDNIGHT_VIOLET: '#170329',
@@ -33,6 +36,9 @@ export const FontSizes = {
 	TWO: '16px',
 	THREE: '24px',
 	FOUR: '32px',
+	FIVE: '40px',
+	SIX: '48px',
+	SEVEN:'56px',
 
 }
 
@@ -58,7 +64,7 @@ export const Spaces = {
 	NINE: '72px',
 	TEN: '80px',
 };
-export const BorderRadiuses = {
+export const BorderRadius = {
 	ONE: '4px',
     ONE_HALF: '8px',
     TWO: '12px',
