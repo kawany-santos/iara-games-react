@@ -11,11 +11,11 @@ export const SearchSection = styled.div`
 	height: 100%;
     align-items: ${Align.CENTER};
     justify-content: ${Justify.CENTER};
-    background-color: ${Colors.SEA_GREEN};
     text-align: ${Align.CENTER};
     display: ${Display.FLEX};
     flex-direction: column;
     gap: ${Spaces.ONE_HALF};
+    margin-top: 100px;
 
 
 `;

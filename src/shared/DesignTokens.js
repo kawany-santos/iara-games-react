@@ -11,6 +11,7 @@ export const Colors = {
     LIGHT_PURPLE: '#B8B8FF',
     SEA_GREEN: '#2A8F55',
     MIDNIGHT_VIOLET: '#170329',
+	FOOTER_BACKGROUND: '#0D0614',
 }
 
 export const FontFamilies = {

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Loja } from './screens/Loja';
 import { Forum } from './screens/Forum';
+import { Loja } from './screens/Loja';
 import { NotFound } from './screens/NotFound';
 import { NormalizeStyles } from './shared/NormalizeStyles';
 
@@ -11,8 +11,8 @@ export function App() {
       <NormalizeStyles />
       <BrowserRouter>
         <Routes>
-          <Route path="/forum" element={<Forum />} />
-          <Route path="/" element={<Loja />} />
+          <Route path="/loja" element={<Loja />} />
+          <Route path="/" element={<Forum />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

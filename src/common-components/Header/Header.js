@@ -4,7 +4,6 @@ import IaraGmaesLogo from '../../assets/images/logo_iara_games_dark_sem_fundo.pn
 const Wrapper = styled.header`
 	width: 100%;
 	height: 70px;
-	background-color: ${Colors.NEUTRAL_BLACK};
 	padding: ${Spaces.TWO};
 	display: flex;
 	justify-content: center;
@@ -17,7 +16,7 @@ const Logo = styled.img.attrs({
 	src: IaraGmaesLogo,
 	alt: 'Logo do Iara Games',
 })`
-	height: 100%;
+	height: 80%;
 `;
 export function Header() {
 	return (

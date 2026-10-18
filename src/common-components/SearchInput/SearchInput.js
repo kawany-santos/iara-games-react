@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import {
-	BorderRadius,
 	Colors,
 	FontFamilies,
 	FontSizes,
@@ -9,45 +8,62 @@ import {
     Align,
 } from '../../shared/DesignTokens';
 const Wrapper = styled.div`
-	display: grid;
+	display: flex;
+	flex-direction: row;
 	align-items: center;
-	grid-template-columns: 35fr 10fr;
-	grid-template-rows: 4fr 4fr;
-	gap: ${Spaces.TWO};
-	padding: ${Spaces.NONE} ${Spaces.TWO};
-	border-radius: ${BorderRadius.ONE};
-	height: 40px;
+	width: 100%;
+	gap: ${Spaces.THREE};
+	justify-content: center;
+	align-items: center;
+    @media (max-width: 800px) {
+        		flex-direction: column;
+
+
+
+	}
 `;
 
 const Input = styled.input`
-	font-size: ${FontSizes.ONE_HALF};
+	font-size: ${FontSizes.TWO};
 	font-family: ${FontFamilies.TEXT};
+	width: 40%;
+	height: 50px;
 	border: none;
 	outline: none;
-	padding: ${Spaces.ONE};
+	padding-left: ${Spaces.TWO};
 	color: ${Colors.NEUTRAL_GREY};
-	background: none;
-	&::placeholder {
-		color: ${Colors.NEUTRAL_GREY};
-		opacity: 1;
-	}
-	&:-ms-input-placeholder {
-		color: ${Colors.NEUTRAL_GREY};
-	}
-	&::-ms-input-placeholder {
-		color: ${Colors.NEUTRAL_GREY};
+	background-color: ${Colors.NEUTRAL_BEGE};
+	border-radius: 20px;
+	margin-top: 15px;
+	@media (max-width: 800px) {
+        		width: 70%;
+
+
+
+
 	}
 `;
 
 const Buscar = styled.button`
+	font-size: ${FontSizes.TWO};
     font-family: ${FontFamilies.TEXT}
     font-weight: ${FontWeights.SEMIBOLD};
     color: ${Colors.NEUTRAL_WHITE};
     text-align: ${Align.CENTER};
     justify-items: ${Align.CENTER};
-    border-radius: ${BorderRadius.ONE_HALF};
+	border-radius: 20px;
     background-color: ${Colors.DARK_AMETHYST};
+	width: 10%;
+	height: 50px;
     border: none;
+		@media (max-width: 800px) {
+        		width: 40%;
+				margin-top:20px;
+
+
+
+
+	}
 
 `;
 

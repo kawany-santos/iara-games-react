@@ -25,7 +25,7 @@ const CardsTopics = styled.div`
     display: flex;
     justify-content: ${Justify.CENTER};
     align-items: ${Align.CENTER};
-    background-color: ${Colors.REBECCA_PURPLE};
+    margin-top: 200px;
 
 `;
 
@@ -56,6 +56,10 @@ const CardsSub = styled.div`
     display: ${Display.FLEX};
     flex-direction: row;
     gap: ${Spaces.SEVEN};
+    	@media (max-width: 800px) {
+		    flex-direction: column;
+
+	}
 
 `;
 
@@ -69,6 +73,7 @@ const Cards = styled.div`
     gap: none;
     padding-top: ${Spaces.FOUR};
     padding-left: ${Spaces.THREE};
+
 `;
 
 

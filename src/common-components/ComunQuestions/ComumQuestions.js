@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 import { 
     Colors, 
-    Display,
     Align,
     Justify,
-    Spaces,
     FontFamilies,
     FontSizes,
     FontWeights,
     BorderRadius,
-    FontLineHeights,
 } from '../../shared/DesignTokens';
 
 import arrowIcon from '../../assets/icons/arrow-down-svgrepo-com.svg';
@@ -21,8 +18,9 @@ const QuestionSection = styled.div`
     flex-direction: column;
     justify-content: ${Justify.CENTER};
     align-items: ${Align.CENTER};
-    background-color: ${Colors.PURPLE_AMETHYST};
     gap: 20px;
+    margin-top: 200px;
+
 
 `;
 
@@ -31,6 +29,11 @@ const Icon1 = styled.img.attrs({
 })`
     width: 30px;
     height: 30px;
+    @media (max-width: 700px) {
+		display: none;
+
+
+	}
 
 `;
 
@@ -39,13 +42,16 @@ const Subtitulo = styled.h2`
     font-size: ${FontSizes.FOUR};
     font-weight: ${FontWeights.SEMIBOLD};
     color: ${Colors.NEUTRAL_WHITE};
+    @media (max-width: 400px) {
+		        width: 80%;
 
 
+	}
 `;
 
 const DivCards = styled.div`
-    width: 70%;
-    height: 50px;
+    width: 60%;
+    height: 65px;
     display: flex;
     flex-direction: row;
     padding-left: 2%;
@@ -53,16 +59,24 @@ const DivCards = styled.div`
     gap: 55%;
     border-radius: ${BorderRadius.TWO};
     background: linear-gradient(90deg,rgba(242, 241, 234, 1) 70%, rgba(169, 225, 144, 1) 100%);
+        	@media (max-width: 400px) {
+		        width: 80%;
 
+
+	}
 `;
 
 const DivText = styled.p`
     font-family: ${FontFamilies.TEXT};
-    font-size: ${FontSizes.ONE_QUARTER};
+    font-size: ${FontSizes.TWO};
     font-weight: ${FontWeights.SEMIBOLD};
     color: ${Colors.NEUTRAL_BLACK};
     width: 40%;
+    @media (max-width: 700px) {
+		        width: 80%;
 
+
+	}
 `;
 
 
